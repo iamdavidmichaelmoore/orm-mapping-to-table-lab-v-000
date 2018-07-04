@@ -1,9 +1,9 @@
 class Student
 
   # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]  
+  #  with DB[:conn]
 
-  
+
   attr_access :name, :grade
 
   def initialize(name:, grade:)
@@ -14,6 +14,7 @@ class Student
   def self.save(name:, grade:)
   end
 
-  def self.create(name, grade)
+  def self.create(name:, grade:)
+    student = Song.save(name, grade)
   end
 end
