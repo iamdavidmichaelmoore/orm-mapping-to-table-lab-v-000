@@ -5,6 +5,7 @@ class Student
 
 
   attr_access :name, :grade
+  attr_reader :id
 
   def initialize(name:, grade:)
     @name = name
